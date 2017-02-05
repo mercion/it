@@ -1,0 +1,154 @@
+<ion-view view-title="Just in time coffee">
+
+
+
+
+
+  <ion-content class="padding">
+    <h3>Select your cafe and coffee</h3>
+
+
+
+
+
+
+
+
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="img/suw.png">
+    <h2>Start Up Cafe</h2>
+    <p>Nikolas is serving today</p>
+  </div>
+
+  <div class="item item-body">
+    <div height=100, id="suwmap">
+
+    </div>
+    <p>
+        This cafe offers a number of coffee brands and prides itself as being
+        one of the most inovative coffee houses in town.
+    </p>
+        <a class="button button-block button-positive icon-left ion-coffee" ng-click="openModal()">
+             Order a drink here 
+        </a>
+
+    <p>
+      <a href="#" class="subdued">ETA: X min </a>
+      <a href="#" class="subdued ion-thumbsup"> Recomneded by 5</a>
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+  </ion-content>
+
+
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Order Form</h1>
+    </ion-header-bar>
+    <ion-content>
+
+<div class="card">
+  <div class="item item-divider">
+    How it works
+  </div>
+  <div class="item item-text-wrap">
+    <ol type="1">
+        <li> 1. Choose eactly what you want and order below </li>
+        <li> 2. When you are <b>15min</b> from the cafe your barista gets notified of your order </li>
+        <li> 3. When you are <b>5min</b> from the cafe your barista gets notified to start making your coffee </li>
+        <li> 4. When you 10 meters from your cofee, you get a notification </li>
+    </ol>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<ul class="list">
+
+  <li class="item item-toggle">
+     Sugar <b>+1 NOK</b>
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+
+
+  <li class="item item-toggle">
+     Milk <b>+5 NOK</b>
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+
+
+
+  <li class="item item-toggle">
+     Caramel <b>+5 NOK</b>
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+    <li>
+        <a class="button button-full button-balanced icon-left ion-cash" ng-click="startOrder()">
+             Place Order
+        </a>
+    </li>
+    <li>
+        <a class="button button-full button-dark icon-left ion-android-cancel" ng-click="closeModal()">
+             Cancel Order
+        </a>
+    </li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ion-content>
+  </ion-modal-view>
+</script>
+
+
+
+
+
+</ion-view>
